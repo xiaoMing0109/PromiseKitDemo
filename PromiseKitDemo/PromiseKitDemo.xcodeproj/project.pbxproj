@@ -17,6 +17,13 @@
 		BF987A26292E4C8D006D5B55 /* PromiseKitDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF987A25292E4C8D006D5B55 /* PromiseKitDemoTests.swift */; };
 		BF987A30292E4C8D006D5B55 /* PromiseKitDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF987A2F292E4C8D006D5B55 /* PromiseKitDemoUITests.swift */; };
 		BF987A32292E4C8D006D5B55 /* PromiseKitDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF987A31292E4C8D006D5B55 /* PromiseKitDemoUITestsLaunchTests.swift */; };
+		BFC6E224292E501800F41AC1 /* PromiseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6E21E292E501800F41AC1 /* PromiseViewModel.swift */; };
+		BFC6E226292E501800F41AC1 /* PromiseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6E221292E501800F41AC1 /* PromiseController.swift */; };
+		BFC6E227292E501800F41AC1 /* PromiseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6E223292E501800F41AC1 /* PromiseModel.swift */; };
+		BFC6E22B292E537700F41AC1 /* RXSwiftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6E229292E537700F41AC1 /* RXSwiftController.swift */; };
+		BFC6E22C292E537700F41AC1 /* RXSwiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6E22A292E537700F41AC1 /* RXSwiftViewModel.swift */; };
+		BFC6E22F292E53E900F41AC1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6E22E292E53E900F41AC1 /* BaseViewController.swift */; };
+		BFC6E232292E55A400F41AC1 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6E231292E55A400F41AC1 /* CustomError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 		BF987A2B292E4C8D006D5B55 /* PromiseKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PromiseKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF987A2F292E4C8D006D5B55 /* PromiseKitDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseKitDemoUITests.swift; sourceTree = "<group>"; };
 		BF987A31292E4C8D006D5B55 /* PromiseKitDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseKitDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BFC6E21E292E501800F41AC1 /* PromiseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromiseViewModel.swift; sourceTree = "<group>"; };
+		BFC6E221292E501800F41AC1 /* PromiseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromiseController.swift; sourceTree = "<group>"; };
+		BFC6E223292E501800F41AC1 /* PromiseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromiseModel.swift; sourceTree = "<group>"; };
+		BFC6E229292E537700F41AC1 /* RXSwiftController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXSwiftController.swift; sourceTree = "<group>"; };
+		BFC6E22A292E537700F41AC1 /* RXSwiftViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXSwiftViewModel.swift; sourceTree = "<group>"; };
+		BFC6E22E292E53E900F41AC1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BFC6E231292E55A400F41AC1 /* CustomError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		D568C8D2F65D4EAD7AC6681C /* Pods_PromiseKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PromiseKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC54DDEC3A5C020257E16614 /* Pods-PromiseKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromiseKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-PromiseKitDemo/Pods-PromiseKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +128,7 @@
 		BF987A0D292E4C8C006D5B55 /* PromiseKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BFC6E21B292E501800F41AC1 /* Demos */,
 				BF987A0E292E4C8C006D5B55 /* AppDelegate.swift */,
 				BF987A10292E4C8C006D5B55 /* SceneDelegate.swift */,
 				BF987A12292E4C8C006D5B55 /* ViewController.swift */,
@@ -142,13 +157,82 @@
 			path = PromiseKitDemoUITests;
 			sourceTree = "<group>";
 		};
+		BFC6E21B292E501800F41AC1 /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				BFC6E230292E55A400F41AC1 /* Common */,
+				BFC6E22D292E53DF00F41AC1 /* Base */,
+				BFC6E21C292E501800F41AC1 /* PromiseKit */,
+				BFC6E228292E537700F41AC1 /* RXSwift */,
+			);
+			path = Demos;
+			sourceTree = "<group>";
+		};
+		BFC6E21C292E501800F41AC1 /* PromiseKit */ = {
+			isa = PBXGroup;
+			children = (
+				BFC6E220292E501800F41AC1 /* Controller */,
+				BFC6E21D292E501800F41AC1 /* ViewModel */,
+				BFC6E222292E501800F41AC1 /* Model */,
+			);
+			path = PromiseKit;
+			sourceTree = "<group>";
+		};
+		BFC6E21D292E501800F41AC1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BFC6E21E292E501800F41AC1 /* PromiseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BFC6E220292E501800F41AC1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BFC6E221292E501800F41AC1 /* PromiseController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BFC6E222292E501800F41AC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFC6E223292E501800F41AC1 /* PromiseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFC6E228292E537700F41AC1 /* RXSwift */ = {
+			isa = PBXGroup;
+			children = (
+				BFC6E229292E537700F41AC1 /* RXSwiftController.swift */,
+				BFC6E22A292E537700F41AC1 /* RXSwiftViewModel.swift */,
+			);
+			path = RXSwift;
+			sourceTree = "<group>";
+		};
+		BFC6E22D292E53DF00F41AC1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BFC6E22E292E53E900F41AC1 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BFC6E230292E55A400F41AC1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BFC6E231292E55A400F41AC1 /* CustomError.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		EC994010B277ED993562CD95 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				DC54DDEC3A5C020257E16614 /* Pods-PromiseKitDemo.debug.xcconfig */,
 				5AFCE50C502A94311DF0F255 /* Pods-PromiseKitDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -327,8 +411,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFC6E224292E501800F41AC1 /* PromiseViewModel.swift in Sources */,
 				BF987A13292E4C8C006D5B55 /* ViewController.swift in Sources */,
+				BFC6E226292E501800F41AC1 /* PromiseController.swift in Sources */,
 				BF987A0F292E4C8C006D5B55 /* AppDelegate.swift in Sources */,
+				BFC6E22F292E53E900F41AC1 /* BaseViewController.swift in Sources */,
+				BFC6E232292E55A400F41AC1 /* CustomError.swift in Sources */,
+				BFC6E22C292E537700F41AC1 /* RXSwiftViewModel.swift in Sources */,
+				BFC6E22B292E537700F41AC1 /* RXSwiftController.swift in Sources */,
+				BFC6E227292E501800F41AC1 /* PromiseModel.swift in Sources */,
 				BF987A11292E4C8C006D5B55 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +599,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QW7324TCJY;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PromiseKitDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -515,6 +607,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -544,6 +637,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
